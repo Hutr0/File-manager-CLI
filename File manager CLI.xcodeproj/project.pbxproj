@@ -11,6 +11,8 @@
 		E0102BC4273AF234009FBC13 /* FileSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0102BC3273AF234009FBC13 /* FileSystem.swift */; };
 		E0102BC6273AF5BD009FBC13 /* Interface.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0102BC5273AF5BD009FBC13 /* Interface.swift */; };
 		E0FB4015273AFD4900A3F9DB /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FB4014273AFD4900A3F9DB /* File.swift */; };
+		E0FB4019273B065F00A3F9DB /* JSON model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FB4018273B065F00A3F9DB /* JSON model.swift */; };
+		E0FB401B273B071D00A3F9DB /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FB401A273B071D00A3F9DB /* JSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +33,8 @@
 		E0102BC3273AF234009FBC13 /* FileSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSystem.swift; sourceTree = "<group>"; };
 		E0102BC5273AF5BD009FBC13 /* Interface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interface.swift; sourceTree = "<group>"; };
 		E0FB4014273AFD4900A3F9DB /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		E0FB4018273B065F00A3F9DB /* JSON model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JSON model.swift"; sourceTree = "<group>"; };
+		E0FB401A273B071D00A3F9DB /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,9 +68,11 @@
 			isa = PBXGroup;
 			children = (
 				E0023A2E273AF07B00CDB81D /* main.swift */,
-				E0FB4014273AFD4900A3F9DB /* File.swift */,
 				E0102BC5273AF5BD009FBC13 /* Interface.swift */,
 				E0102BC3273AF234009FBC13 /* FileSystem.swift */,
+				E0FB4014273AFD4900A3F9DB /* File.swift */,
+				E0FB401A273B071D00A3F9DB /* JSON.swift */,
+				E0FB4018273B065F00A3F9DB /* JSON model.swift */,
 			);
 			path = "File manager CLI";
 			sourceTree = "<group>";
@@ -131,6 +137,8 @@
 			files = (
 				E0102BC4273AF234009FBC13 /* FileSystem.swift in Sources */,
 				E0FB4015273AFD4900A3F9DB /* File.swift in Sources */,
+				E0FB4019273B065F00A3F9DB /* JSON model.swift in Sources */,
+				E0FB401B273B071D00A3F9DB /* JSON.swift in Sources */,
 				E0023A2F273AF07B00CDB81D /* main.swift in Sources */,
 				E0102BC6273AF5BD009FBC13 /* Interface.swift in Sources */,
 			);

@@ -38,6 +38,10 @@ class Interface {
             }
         case 2:
             File().show()
+        case 3:
+            JSON().show()
+        case 4:
+            break
         case 5:
             return
         default:
