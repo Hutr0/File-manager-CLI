@@ -58,7 +58,6 @@ class File {
         case 3:
             self.delete(url)
         case 4:
-            Interface().show()
             return
         default:
             print("Error: Number out of range\n")
