@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Zip
 
 class ZIP {
     
@@ -65,7 +66,18 @@ class ZIP {
                 print(error.localizedDescription)
             }
         case 2:
+            do {
+                let contents = try FileManager.default.contentsOfDirectory(atPath: path)
+                var i = 0
+                for content in contents {
+                    print("\(i): \(content)")
+                    i += 1
+                }
+            } catch {
+                print(error.localizedDescription)
+            }
             
+            //Zip.quickZipFiles(<#T##paths: [URL]##[URL]#>, fileName: <#T##String#>)
         case 4:
             Interface().show()
             return
