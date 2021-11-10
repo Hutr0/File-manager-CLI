@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BEA3160921446CAF40E5EAB0 /* Pods_File_manager_CLI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7C7F91B1716ACFDC4EB7538 /* Pods_File_manager_CLI.framework */; };
 		E0023A2F273AF07B00CDB81D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0023A2E273AF07B00CDB81D /* main.swift */; };
 		E0102BC4273AF234009FBC13 /* FileSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0102BC3273AF234009FBC13 /* FileSystem.swift */; };
 		E0102BC6273AF5BD009FBC13 /* Interface.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0102BC5273AF5BD009FBC13 /* Interface.swift */; };
@@ -31,8 +30,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D0AE783B070B472249AA9081 /* Pods-File manager CLI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-File manager CLI.release.xcconfig"; path = "Target Support Files/Pods-File manager CLI/Pods-File manager CLI.release.xcconfig"; sourceTree = "<group>"; };
-		D7C7F91B1716ACFDC4EB7538 /* Pods_File_manager_CLI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_File_manager_CLI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0023A2B273AF07B00CDB81D /* File manager CLI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "File manager CLI"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0023A2E273AF07B00CDB81D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		E0102BC3273AF234009FBC13 /* FileSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSystem.swift; sourceTree = "<group>"; };
@@ -42,7 +39,6 @@
 		E0FB401A273B071D00A3F9DB /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		E0FB401C273B311200A3F9DB /* XML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XML.swift; sourceTree = "<group>"; };
 		E0FB401E273B526300A3F9DB /* ZIP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZIP.swift; sourceTree = "<group>"; };
-		F5FC2EE2F1EEA1E8B68B69CF /* Pods-File manager CLI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-File manager CLI.debug.xcconfig"; path = "Target Support Files/Pods-File manager CLI/Pods-File manager CLI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,38 +46,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEA3160921446CAF40E5EAB0 /* Pods_File_manager_CLI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7DAD05E7949BBDC678FEDB3A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D7C7F91B1716ACFDC4EB7538 /* Pods_File_manager_CLI.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		AEA00AA5B48EFFA09CFB2F80 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F5FC2EE2F1EEA1E8B68B69CF /* Pods-File manager CLI.debug.xcconfig */,
-				D0AE783B070B472249AA9081 /* Pods-File manager CLI.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		E0023A22273AF07B00CDB81D = {
 			isa = PBXGroup;
 			children = (
 				E0023A2D273AF07B00CDB81D /* File manager CLI */,
 				E0023A2C273AF07B00CDB81D /* Products */,
-				AEA00AA5B48EFFA09CFB2F80 /* Pods */,
-				7DAD05E7949BBDC678FEDB3A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -115,7 +90,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0023A32273AF07B00CDB81D /* Build configuration list for PBXNativeTarget "File manager CLI" */;
 			buildPhases = (
-				E992EF59E2A6C9D26A221C66 /* [CP] Check Pods Manifest.lock */,
 				E0023A27273AF07B00CDB81D /* Sources */,
 				E0023A28273AF07B00CDB81D /* Frameworks */,
 				E0023A29273AF07B00CDB81D /* CopyFiles */,
@@ -161,31 +135,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		E992EF59E2A6C9D26A221C66 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-File manager CLI-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E0023A27273AF07B00CDB81D /* Sources */ = {
@@ -323,7 +272,6 @@
 		};
 		E0023A33273AF07B00CDB81D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F5FC2EE2F1EEA1E8B68B69CF /* Pods-File manager CLI.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VWW7MQ2767;
@@ -335,7 +283,6 @@
 		};
 		E0023A34273AF07B00CDB81D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0AE783B070B472249AA9081 /* Pods-File manager CLI.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VWW7MQ2767;
