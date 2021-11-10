@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Zip
 
 class ZIP {
     
@@ -17,23 +18,11 @@ class ZIP {
             return
         }
         
-        self.menu(documentsUrl.path)
-//
-//        print("Enter a name of file")
-//        let filename = readLine()
-//
-//        guard let filename = filename else {
-//            print("Error: Invalid filename")
-//            self.show()
-//            return
-//        }
-//
-//        let pathWithFilename = documentsUrl.appendingPathComponent(filename + ".xml")
-//
-//        self.menu(pathWithFilename)
+        self.menu(documentsUrl)
     }
     
-    private func menu(_ path: String) {
+    private func menu(_ url: URL) {
+        let path = url.path
         print(
             """
             
@@ -48,31 +37,73 @@ class ZIP {
         
         guard let number = Int(number!) else {
             print("Error: Invalid number\n")
-            self.menu(path)
+            self.menu(url)
             return
         }
         
         switch number {
         case 1:
+            showFilesInDir(path: path)
+        case 2:
+            showFilesInDir(path: path)
+            var pathArray: [URL] = []
+            
+            print("Choose a file. If you are done, just press Enter...")
+            while true {
+                let choice = readLine()
+                
+                if choice == "" {
+                    break
+                }
+                
+                guard let choice = Int(choice!) else {
+                    print("Error: Invalid number\n")
+                    continue
+                }
+                
+                do {
+                    let contents = try FileManager.default.contentsOfDirectory(atPath: path)
+                    var i = 0
+                    for content in contents {
+                        if choice == i {
+                            pathArray.append(url.appendingPathComponent(content))
+                            break
+                        }
+                        i += 1
+                    }
+                } catch {
+                    print(error.localizedDescription)
+                }
+            }
+            
             do {
-                let contents = try FileManager.default.contentsOfDirectory(atPath: path)
-                var i = 0
-                for content in contents {
-                    print("\(i): \(content)")
-                    i += 1
+                try Zip.zipFiles(paths: pathArray,
+                                 zipFilePath: url.appendingPathComponent("Array.zip"),
+                                 password: nil) { progress in
+                    print(progress)
                 }
             } catch {
                 print(error.localizedDescription)
             }
-        case 2:
-            break
         case 4:
-            Interface().show()
             return
         default:
             print("Error: Number out of range\n")
         }
         
-        self.menu(path)
+        self.menu(url)
+    }
+    
+    private func showFilesInDir(path: String) {
+        do {
+            let contents = try FileManager.default.contentsOfDirectory(atPath: path)
+            var i = 0
+            for content in contents {
+                print("\(i): \(content)")
+                i += 1
+            }
+        } catch {
+            print(error.localizedDescription)
+        }
     }
 }
