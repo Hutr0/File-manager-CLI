@@ -1,0 +1,6 @@
+framework module Pods_File_manager_CLI {
+  umbrella header "Pods-File manager CLI-umbrella.h"
+
+  export *
+  module * { export * }
+}
