@@ -65,7 +65,7 @@ class ZIP {
                 print(error.localizedDescription)
             }
         case 2:
-            
+            break
         case 4:
             Interface().show()
             return
