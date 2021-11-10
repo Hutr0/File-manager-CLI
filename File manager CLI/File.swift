@@ -81,8 +81,6 @@ class File {
         } catch {
             print(error.localizedDescription)
         }
-        
-        self.menu(url)
     }
     
     private func read(_ url: URL) {
@@ -92,8 +90,6 @@ class File {
         } catch {
             print(error.localizedDescription)
         }
-        
-        self.menu(url)
     }
     
     private func delete(_ url: URL) {
@@ -102,7 +98,5 @@ class File {
         } catch {
             print("Error: \(error.localizedDescription)")
         }
-        
-        self.menu(url)
     }
 }

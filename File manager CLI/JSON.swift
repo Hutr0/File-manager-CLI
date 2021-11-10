@@ -95,8 +95,6 @@ class JSON {
         } catch {
             print(error.localizedDescription)
         }
-        
-        self.menu(url)
     }
     
     private func getMeals(_ url: URL) -> [Meal] {
@@ -142,8 +140,6 @@ class JSON {
         } catch {
             print(error.localizedDescription)
         }
-        
-        self.menu(url)
     }
     
     private func delete(_ url: URL) {
@@ -152,7 +148,5 @@ class JSON {
         } catch {
             print("Error: \(error.localizedDescription)")
         }
-        
-        self.menu(url)
     }
 }

@@ -78,7 +78,7 @@ class ZIP {
             
             do {
                 try Zip.zipFiles(paths: pathArray,
-                                 zipFilePath: url.appendingPathComponent("Array.zip"),
+                                 zipFilePath: url.appendingPathComponent("Archive.zip"),
                                  password: nil, progress: nil)
                 print("The files have been archived")
             } catch {

@@ -78,8 +78,6 @@ class XML {
         } catch {
             print(error.localizedDescription)
         }
-        
-        self.menu(url)
     }
     
     private func fillOutXML(_ url: URL, _ root: XMLElement) {
@@ -88,13 +86,13 @@ class XML {
         while true {
             print("""
                 
-                Now you got an \(current.name ?? "") element
+                Now you got a '\(current.name ?? "")' element
                 1. Get all childs
                 2. Select a child
                 3. Add a child
                 4. Set a value
                 5. Return to root
-                6. Go back?.  
+                6. Save
                 
                 """)
             let choice = readLine()
@@ -159,8 +157,6 @@ class XML {
         } catch {
             print(error.localizedDescription)
         }
-
-        self.menu(url)
     }
 
     private func delete(_ url: URL) {
@@ -169,7 +165,5 @@ class XML {
         } catch {
             print("Error: \(error.localizedDescription)")
         }
-
-        self.menu(url)
     }
 }
