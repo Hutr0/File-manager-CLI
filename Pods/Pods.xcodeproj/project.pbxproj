@@ -45,11 +45,11 @@
 		0EC781CD7B4AC4CD51392D196F592343 /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = Zip/minizip/include/zip.h; sourceTree = "<group>"; };
 		1D2D58090470D1BF88CCFC16A0CFF592 /* QuickZip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickZip.swift; path = Zip/QuickZip.swift; sourceTree = "<group>"; };
 		20F07E2F402AD773CC3EF441FED97F06 /* Zip-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Zip-Info.plist"; sourceTree = "<group>"; };
-		24243BFC5AC1B2938B14E3A751AA3E80 /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = zip.c; path = Zip/minizip/zip.c; sourceTree = "<group>"; };
+		24243BFC5AC1B2938B14E3A751AA3E80 /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = zip.c; path = Zip/minizip/zip.c; sourceTree = "<group>"; };
 		2D164A09E8C33B1143206EC0C46CC373 /* Pods-File manager CLI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-File manager CLI.release.xcconfig"; sourceTree = "<group>"; };
 		318AFE4ABAE7108C73F330FF26A1B66F /* Pods-File manager CLI-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-File manager CLI-Info.plist"; sourceTree = "<group>"; };
 		454CBB36A96C87BEAD32DD0181D849B9 /* Zip-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Zip-dummy.m"; sourceTree = "<group>"; };
-		55864114BEED615862B1B517B153236D /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = ioapi.c; path = Zip/minizip/ioapi.c; sourceTree = "<group>"; };
+		55864114BEED615862B1B517B153236D /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi.c; path = Zip/minizip/ioapi.c; sourceTree = "<group>"; };
 		55A6A366C936940952F4C0633A2028BD /* Zip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Zip.debug.xcconfig; sourceTree = "<group>"; };
 		57E38FE3F59C4CEFBFF6805CFC404D42 /* Zip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Zip.swift; path = Zip/Zip.swift; sourceTree = "<group>"; };
 		5B20CBC81478E67E3C8F1FFE9D4670BE /* Minizip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Minizip.h; path = Zip/minizip/include/Minizip.h; sourceTree = "<group>"; };
@@ -60,12 +60,12 @@
 		6F938B779232646DE3581B293473EBE7 /* Zip.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Zip.modulemap; sourceTree = "<group>"; };
 		7ECFE68E29579B94E55F59B33B962705 /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = Zip/minizip/include/unzip.h; sourceTree = "<group>"; };
 		940E1ED8C5B0BA95571B82117BC67509 /* Zip-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Zip-prefix.pch"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A2F7A4AC4ACB1F42222251BC26413EB1 /* Zip-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Zip-umbrella.h"; sourceTree = "<group>"; };
-		A845402EF959A57A4640F2A4F5155943 /* Zip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Zip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ABE13CEA62D36C9009B33B10D9AA949F /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = unzip.c; path = Zip/minizip/unzip.c; sourceTree = "<group>"; };
+		A845402EF959A57A4640F2A4F5155943 /* Zip */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Zip; path = Zip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABE13CEA62D36C9009B33B10D9AA949F /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = unzip.c; path = Zip/minizip/unzip.c; sourceTree = "<group>"; };
 		AE11C5D2F7BE888AABE5BE7846E109ED /* Zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Zip.h; path = Zip/Zip.h; sourceTree = "<group>"; };
-		B13389FAA8808B581FD02356EF3A4A55 /* Pods_File_manager_CLI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_File_manager_CLI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B13389FAA8808B581FD02356EF3A4A55 /* Pods-File manager CLI */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-File manager CLI"; path = Pods_File_manager_CLI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1DE1DB3F9210F09E891A93552E8A184 /* Pods-File manager CLI-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-File manager CLI-frameworks.sh"; sourceTree = "<group>"; };
 		C1430F003D39D9906881A6AC724B7931 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		E59C08E4F58108EFFB5A97D4E9DF4325 /* Zip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Zip.release.xcconfig; sourceTree = "<group>"; };
@@ -117,6 +117,7 @@
 				EBCDD680ADCE30A04DA6E06B53C629F3 /* ZipUtilities.swift */,
 				954116D645A02F18E048A3CC7334A5E2 /* Support Files */,
 			);
+			name = Zip;
 			path = Zip;
 			sourceTree = "<group>";
 		};
@@ -155,8 +156,8 @@
 		C946E8CC173488EE3C88F11F2386E325 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B13389FAA8808B581FD02356EF3A4A55 /* Pods_File_manager_CLI.framework */,
-				A845402EF959A57A4640F2A4F5155943 /* Zip.framework */,
+				B13389FAA8808B581FD02356EF3A4A55 /* Pods-File manager CLI */,
+				A845402EF959A57A4640F2A4F5155943 /* Zip */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -239,7 +240,7 @@
 			);
 			name = Zip;
 			productName = Zip;
-			productReference = A845402EF959A57A4640F2A4F5155943 /* Zip.framework */;
+			productReference = A845402EF959A57A4640F2A4F5155943 /* Zip */;
 			productType = "com.apple.product-type.framework";
 		};
 		81105BFF94409A3382F4BE3D5E5FAB41 /* Pods-File manager CLI */ = {
@@ -258,7 +259,7 @@
 			);
 			name = "Pods-File manager CLI";
 			productName = Pods_File_manager_CLI;
-			productReference = B13389FAA8808B581FD02356EF3A4A55 /* Pods_File_manager_CLI.framework */;
+			productReference = B13389FAA8808B581FD02356EF3A4A55 /* Pods-File manager CLI */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -268,7 +269,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1310;
+				LastUpgradeCheck = 1240;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 13.0";
@@ -345,6 +346,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 55A6A366C936940952F4C0633A2028BD /* Zip.debug.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -380,6 +382,7 @@
 			baseConfigurationReference = 05C33E93A6721ACC94A12C4582F5552B /* Pods-File manager CLI.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -416,6 +419,7 @@
 			baseConfigurationReference = 2D164A09E8C33B1143206EC0C46CC373 /* Pods-File manager CLI.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -579,6 +583,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E59C08E4F58108EFFB5A97D4E9DF4325 /* Zip.release.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
