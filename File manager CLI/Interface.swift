@@ -16,7 +16,7 @@ class Interface {
             1. Print info about file system
             2. Go to file menu
             3. Go to JSON menu
-            4. ...
+            4. Go to XML menu
             5. Exit
             
             """)
@@ -41,6 +41,7 @@ class Interface {
         case 3:
             JSON().show()
         case 4:
+            XML().show()
             break
         case 5:
             return

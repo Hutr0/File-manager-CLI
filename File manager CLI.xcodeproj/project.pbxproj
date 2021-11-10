@@ -13,6 +13,7 @@
 		E0FB4015273AFD4900A3F9DB /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FB4014273AFD4900A3F9DB /* File.swift */; };
 		E0FB4019273B065F00A3F9DB /* JSON model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FB4018273B065F00A3F9DB /* JSON model.swift */; };
 		E0FB401B273B071D00A3F9DB /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FB401A273B071D00A3F9DB /* JSON.swift */; };
+		E0FB401D273B311200A3F9DB /* XML.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FB401C273B311200A3F9DB /* XML.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,7 @@
 		E0FB4014273AFD4900A3F9DB /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		E0FB4018273B065F00A3F9DB /* JSON model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JSON model.swift"; sourceTree = "<group>"; };
 		E0FB401A273B071D00A3F9DB /* JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		E0FB401C273B311200A3F9DB /* XML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XML.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				E0FB4014273AFD4900A3F9DB /* File.swift */,
 				E0FB401A273B071D00A3F9DB /* JSON.swift */,
 				E0FB4018273B065F00A3F9DB /* JSON model.swift */,
+				E0FB401C273B311200A3F9DB /* XML.swift */,
 			);
 			path = "File manager CLI";
 			sourceTree = "<group>";
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0FB401D273B311200A3F9DB /* XML.swift in Sources */,
 				E0102BC4273AF234009FBC13 /* FileSystem.swift in Sources */,
 				E0FB4015273AFD4900A3F9DB /* File.swift in Sources */,
 				E0FB4019273B065F00A3F9DB /* JSON model.swift in Sources */,
