@@ -17,7 +17,8 @@ class Interface {
             2. Go to file menu
             3. Go to JSON menu
             4. Go to XML menu
-            5. Exit
+            5. Go to ZIP menu
+            6. Exit
             
             """)
         
@@ -42,8 +43,9 @@ class Interface {
             JSON().show()
         case 4:
             XML().show()
-            break
         case 5:
+            ZIP().show()
+        case 6:
             return
         default:
             print("Error: Number out of range\n")
