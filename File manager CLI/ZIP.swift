@@ -79,9 +79,53 @@ class ZIP {
             do {
                 try Zip.zipFiles(paths: pathArray,
                                  zipFilePath: url.appendingPathComponent("Array.zip"),
-                                 password: nil) { progress in
-                    print(progress)
+                                 password: nil, progress: nil)
+                print("The files have been archived")
+            } catch {
+                print(error.localizedDescription)
+            }
+        case 3:
+            showFilesInDir(path: path)
+            var zipPath: URL?
+            
+            print("Choose a zip file for unarchive. If you are done, just press Enter...")
+            while true {
+                if zipPath != nil {
+                    break
                 }
+                
+                let choice = readLine()
+                
+                guard let choice = Int(choice!) else {
+                    print("Error: Invalid number\n")
+                    continue
+                }
+                
+                do {
+                    let contents = try FileManager.default.contentsOfDirectory(atPath: path)
+                    var i = 0
+                    for content in contents {
+                        if choice == i && content.hasSuffix(".zip"){
+                            zipPath = url.appendingPathComponent(content)
+                            break
+                        }
+                        i += 1
+                    }
+                } catch {
+                    print(error.localizedDescription)
+                }
+                
+                guard zipPath != nil else {
+                    print("Error: Choose zip file")
+                    continue
+                }
+            }
+            
+            do {
+                try Zip.unzipFile(zipPath!, destination: url.appendingPathComponent("Unarchive"), overwrite: true, password: nil, progress: { progress in
+                    print(progress)
+                })
+                print("The zip file has been unarchived")
             } catch {
                 print(error.localizedDescription)
             }
