@@ -30,7 +30,8 @@ class ZIP {
             1. Show all files on the desktop
             2. Make a ZIP
             3. UnMake a ZIP
-            4. Go to main menu
+            4. Delete an unarchived files and an archive
+            5. Go to main menu
             
             """)
         let number = readLine()
@@ -130,6 +131,13 @@ class ZIP {
                 print(error.localizedDescription)
             }
         case 4:
+            do {
+                try FileManager.default.removeItem(at: url.appendingPathComponent("Archive.zip"))
+                try FileManager.default.removeItem(at: url.appendingPathComponent("Unarchive", isDirectory: true))
+            } catch {
+                print(error.localizedDescription)
+            }
+        case 5:
             return
         default:
             print("Error: Number out of range\n")
