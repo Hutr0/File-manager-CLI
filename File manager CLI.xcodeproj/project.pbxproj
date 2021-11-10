@@ -71,6 +71,7 @@
 				F5FC2EE2F1EEA1E8B68B69CF /* Pods-File manager CLI.debug.xcconfig */,
 				D0AE783B070B472249AA9081 /* Pods-File manager CLI.release.xcconfig */,
 			);
+			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -324,7 +325,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F5FC2EE2F1EEA1E8B68B69CF /* Pods-File manager CLI.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VWW7MQ2767;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -337,7 +337,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D0AE783B070B472249AA9081 /* Pods-File manager CLI.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VWW7MQ2767;
 				ENABLE_HARDENED_RUNTIME = YES;
